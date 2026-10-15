@@ -1,0 +1,107 @@
+header, nav, main, section, footer,
+ul, li, h1, h2, p, div {
+  border: 1px solid red;
+  margin:0px;
+}
+h1.hero {font-family:Trebuchet MS; font-size: 45px;}
+
+p {color:blue;
+    font-size: 18px;
+    line-height:1.5;
+    background-color: rgb(117, 21, 21);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:black;
+    background-color:lightgray;
+}
+
+
+
+ul {
+    color:brown;
+    font-size:18px;
+    line-height:1.5;
+    background-color:lightblue;
+}
+
+li {
+    font-size:18px;
+    line-height:1.5;
+}
+
+a {
+    color:blue;
+    font-size: 18px;
+}
+
+ol{
+    color:orangered;
+    font-size: 19px;
+    line-height: 1.5;
+    background-color:bisque;
+}
+
+.nav li a {
+    text-transform: uppercase;
+    color: rgb(152, 45, 45);
+}
+
+.hero {
+    background-image: url("/assets/image_2.jpg");
+
+    min-height: 400px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:flex-end;
+    padding:30px;
+
+}
+
+h1 {
+    color:rgb(160, 64, 64);
+    font-family:"Trebuchet MS" , sans-serif;
+    font-size:45px;
+}
+
+/* Header background color */
+.site-header {
+    background-color: darkgray;
+    padding: 20px 30px;
+}
+
+/* Logo styling */
+.logo {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/* Center the navigation menu */
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    gap: 20px;
+}
+
+/* Background color for each menu item */
+.nav li {
+    background-color: lightblue;
+    padding: 10px 20px;
+}
+
+/* Navigation link styling */
+.nav li a {
+    text-transform: uppercase;
+    color: rgb(152, 45, 45);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
