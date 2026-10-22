@@ -243,3 +243,7 @@ h1 {
 body {
     padding-top: 140px;
 }
+
+html, body {
+    overflow-y: auto;
+}
