@@ -1,31 +1,45 @@
 <!-- SITE HEADER Role: Contains site identity and primary navigation.
 
    This section will eventually be moved into includes/header.html and injected using JavaScript. -->
+<!-- Website header -->
+<header class="site-header">
+    <div class="container">
 
-   <div class="container"> <!-- Layout role: centers header content -->
+        <!-- Website title -->
+        <a class="logo" href="index.html">
+            Waterford Fishing Charter
+        </a>
 
-    <a class="logo" href="index.html">Waterford Fishing Charter</a> <!-- Role: site identity / home link -->
+        <!-- Checkbox controls mobile menu -->
+        <input type="checkbox" id="nav-toggle">
 
-    <nav aria-label="Main navigation"> <!-- Semantic role: primary navigation -->
+        <!-- Hamburger button -->
+        <label for="nav-toggle" class="hamburger"
+               aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-     <ul class="nav"> <!-- Semantic role: list of navigation links -->
+        <!-- Navigation menu -->
+        <nav aria-label="Main navigation">
+            <ul class="nav">
 
-      <li><a href="index.html">Home</a></li> <!-- Navigation item -->
+                <li><a href="index.html">Home</a></li>
 
-      <li class="dropdown">
-    <a href="about.html">About</a>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <ul class="submenu">
+                        <li><a href="#">Our Boats</a></li>
+                        <li><a href="#">Our Captains</a></li>
+                        <li><a href="#">Fishing Trips</a></li>
+                    </ul>
+                </li>
 
-    <ul class="submenu">
-        <li><a href="#">Our Boats</a></li>
-        <li><a href="#">Our Captains</a></li>
-        <li><a href="#">Fishing Trips</a></li>
-    </ul>
-</li> <!-- Navigation item -->
+                <li><a href="contact.html">Contact</a></li>
 
-      <li><a href="contact.html">Contact</a></li> <!-- Navigation item -->
+            </ul>
+        </nav>
 
-     </ul>
-
-    </nav>
-
-   </div>
+    </div>
+</header>
