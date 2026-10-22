@@ -1,16 +1,10 @@
- </head>
-
- <body> 
-
-  <!-- SITE HEADER Role: Contains site identity and primary navigation.
+<!-- SITE HEADER Role: Contains site identity and primary navigation.
 
    This section will eventually be moved into includes/header.html and injected using JavaScript. -->
 
-  <header id="site-header" class="site-header"> <!-- Semantic role: site-wide header -->
-
    <div class="container"> <!-- Layout role: centers header content -->
 
-    <a class="logo" href="index.html">My Portfolio</a> <!-- Role: site identity / home link -->
+    <a class="logo" href="index.html">Waterford Fishing Charter</a> <!-- Role: site identity / home link -->
 
     <nav aria-label="Main navigation"> <!-- Semantic role: primary navigation -->
 
@@ -18,7 +12,15 @@
 
       <li><a href="index.html">Home</a></li> <!-- Navigation item -->
 
-      <li><a href="about.html">About</a></li> <!-- Navigation item -->
+      <li class="dropdown">
+    <a href="about.html">About</a>
+
+    <ul class="submenu">
+        <li><a href="#">Our Boats</a></li>
+        <li><a href="#">Our Captains</a></li>
+        <li><a href="#">Fishing Trips</a></li>
+    </ul>
+</li> <!-- Navigation item -->
 
       <li><a href="contact.html">Contact</a></li> <!-- Navigation item -->
 
@@ -27,5 +29,3 @@
     </nav>
 
    </div>
-
-  </header>
