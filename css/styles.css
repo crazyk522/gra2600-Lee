@@ -1,6 +1,5 @@
 header, nav, main, section, footer,
 ul, li, h1, h2, p, div {
-  border: 1px solid red;
   margin:0px;
 }
 h1.hero {font-family:Trebuchet MS; font-size: 45px;}
@@ -11,11 +10,90 @@ p {color:blue;
     background-color: rgb(117, 21, 21);
 }
 
+/* Keep header fixed at the top */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: darkgray;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Put logo above the navigation menu */
+.site-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 h1,h2,h3,h4,h5,h6 {
     color:black;
     background-color:lightgray;
 }
 
+.flex-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.card {
+  background: rgb(60, 60, 60);
+  color: white;
+  flex: 0 0 250px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.card img {
+  border-radius: 8px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 12px 0 6px;
+  font-size: 22px;
+}
+
+.card p {
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+.flex-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  align-items: stretch;          /* was flex-start */
+}
+
+.card {
+  display: flex;                 /* added */
+  flex-direction: column;        /* added */
+  background: rgb(60, 60, 60);
+  color: white;
+  flex: 0 0 250px;
+  box-sizing: border-box;
+  padding: 15px;
+}
 
 
 ul {
@@ -78,7 +156,7 @@ h1 {
     font-size: 30px;
     color: white;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 0;
 }
 
 /* Center the navigation menu */
@@ -89,6 +167,7 @@ h1 {
     padding: 10px;
     margin: 0;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Background color for each menu item */
@@ -104,4 +183,63 @@ h1 {
     font-family: Arial, sans-serif;
     font-size: 18px;
     text-decoration: none;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lightblue;
+    list-style: none;
+    padding: 0;
+    min-width: 180px;
+    z-index: 1001;
+}
+
+/* Show submenu when hovering */
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 5px;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Make hero title visible over image */
+.hero h1 {
+    color: white;
+    background-color: transparent;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Grid layout */
+.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 10px;
+}
+
+/* Make card text readable */
+.card h4,
+.card p {
+    color: white;
+    background-color: transparent;
+}
+
+/* Keep hero image from hiding behind header */
+body {
+    padding-top: 140px;
 }
