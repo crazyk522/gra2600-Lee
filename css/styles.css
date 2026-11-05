@@ -819,3 +819,18 @@ ul, ol {
         padding: 20px;
     }
 }
+/* Fishing Trips banner */
+.trips-hero {
+    background-image: url("/assets/fishing-trip.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Captains banner */
+.captains-hero {
+    background-image: url("/assets/captain-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
