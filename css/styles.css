@@ -4,10 +4,11 @@ ul, li, h1, h2, p, div {
 }
 h1.hero {font-family:Trebuchet MS; font-size: 45px;}
 
-p {color:blue;
+p {
+    color: #333333;
     font-size: 18px;
-    line-height:1.5;
-    background-color: rgb(117, 21, 21);
+    line-height: 1.5;
+    background-color: transparent;
 }
 
 /* Keep header fixed at the top */
@@ -100,7 +101,7 @@ ul {
     color:brown;
     font-size:18px;
     line-height:1.5;
-    background-color:lightblue;
+    background-color: transparent;
 }
 
 li {
@@ -179,7 +180,7 @@ h1 {
 /* Navigation link styling */
 .nav li a {
     text-transform: uppercase;
-    color: rgb(152, 45, 45);
+    color: #164e63;
     font-family: Arial, sans-serif;
     font-size: 18px;
     text-decoration: none;
@@ -423,4 +424,106 @@ body {
 
 .site-header .container {
     position: relative;
+}
+
+
+/* Updated website colors */
+
+/* Main page background */
+body {
+    background-color: #e8f1f5;
+    color: #263238;
+}
+
+/* Paragraph styling */
+p {
+    color: #263238;
+    background-color: transparent;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #164e63;
+    background-color: transparent;
+}
+
+/* Header background */
+.site-header {
+    background-color: #164e63;
+}
+
+/* Navigation buttons */
+.nav li {
+    background-color: #e8f1f5;
+}
+
+/* Navigation text */
+.nav li a {
+    color: #164e63;
+}
+
+/* Navigation dropdown */
+.submenu {
+    background-color: #e8f1f5;
+}
+
+/* Links */
+a {
+    color: #164e63;
+}
+
+/* Lists */
+ul, ol {
+    color: #263238;
+    background-color: transparent;
+}
+
+/* Cards */
+.card {
+    background-color: #263238;
+    color: white;
+}
+
+/* Card headings and paragraphs */
+.card h4,
+.card p {
+    color: white;
+    background-color: transparent;
+}
+
+/* Hero heading */
+.hero h1 {
+    color: white;
+    background-color: transparent;
+}
+
+/* Keep the logo white */
+.logo {
+    color: white;
+}
+
+/* Hamburger lines */
+.hamburger span {
+    background-color: white;
+}
+
+/* Mobile navigation colors */
+@media (max-width: 768px) {
+
+    .site-header nav {
+        background-color: #164e63;
+    }
+
+    .site-header .nav > li {
+        background-color: #263238;
+        border-bottom: 1px solid #607d8b;
+    }
+
+    .site-header .nav li a {
+        color: white;
+    }
+
+    .site-header .submenu {
+        background-color: #365968;
+    }
 }
