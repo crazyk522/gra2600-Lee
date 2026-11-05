@@ -834,3 +834,11 @@ ul, ol {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* Move Captains banner below the fixed header */
+.captains-hero {
+    margin-top: 140px;
+    background-image: url("/assets/captain-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
