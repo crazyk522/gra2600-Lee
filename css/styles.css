@@ -5,7 +5,7 @@ ul, li, h1, h2, p, div {
 h1.hero {font-family:Trebuchet MS; font-size: 45px;}
 
 p {
-    color: #333333;
+    color: #263238;
     font-size: 18px;
     line-height: 1.5;
     background-color: transparent;
@@ -18,7 +18,7 @@ p {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: darkgray;
+    background-color: #164e63;
     padding: 20px 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
@@ -29,27 +29,6 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    color:black;
-    background-color:lightgray;
-}
-
-.flex-demo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 10px;
-  align-items: flex-start;
-}
-
-.card {
-  background: rgb(60, 60, 60);
-  color: white;
-  flex: 0 0 250px;
-  box-sizing: border-box;
-  padding: 15px;
 }
 
 .card img {
@@ -89,7 +68,7 @@ h1,h2,h3,h4,h5,h6 {
 .card {
   display: flex;                 /* added */
   flex-direction: column;        /* added */
-  background: rgb(60, 60, 60);
+  background: #263238;
   color: white;
   flex: 0 0 250px;
   box-sizing: border-box;
@@ -98,7 +77,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 ul {
-    color:brown;
+    color:#263238;
     font-size:18px;
     line-height:1.5;
     background-color: transparent;
@@ -110,20 +89,15 @@ li {
 }
 
 a {
-    color:blue;
+    color: #164e63;
     font-size: 18px;
 }
 
-ol{
-    color:orangered;
+ol {
+    color: #263238;
     font-size: 19px;
     line-height: 1.5;
-    background-color:bisque;
-}
-
-.nav li a {
-    text-transform: uppercase;
-    color: rgb(152, 45, 45);
+    background-color: transparent;
 }
 
 .hero {
@@ -140,15 +114,9 @@ ol{
 }
 
 h1 {
-    color:rgb(160, 64, 64);
-    font-family:"Trebuchet MS" , sans-serif;
-    font-size:45px;
-}
-
-/* Header background color */
-.site-header {
-    background-color: darkgray;
-    padding: 20px 30px;
+    color: #164e63;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 45px;
 }
 
 /* Logo styling */
@@ -173,7 +141,7 @@ h1 {
 
 /* Background color for each menu item */
 .nav li {
-    background-color: lightblue;
+    background-color: #e8f1f5;
     padding: 10px 20px;
 }
 
@@ -196,7 +164,7 @@ h1 {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: lightblue;
+    background-color: #e8f1f5;
     list-style: none;
     padding: 0;
     min-width: 180px;
@@ -333,7 +301,7 @@ body {
     display: block;
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: white;
     border-radius: 3px;
     transition: 0.3s;
 }
@@ -435,76 +403,10 @@ body {
     color: #263238;
 }
 
-/* Paragraph styling */
-p {
-    color: #263238;
-    background-color: transparent;
-}
-
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     color: #164e63;
     background-color: transparent;
-}
-
-/* Header background */
-.site-header {
-    background-color: #164e63;
-}
-
-/* Navigation buttons */
-.nav li {
-    background-color: #e8f1f5;
-}
-
-/* Navigation text */
-.nav li a {
-    color: #164e63;
-}
-
-/* Navigation dropdown */
-.submenu {
-    background-color: #e8f1f5;
-}
-
-/* Links */
-a {
-    color: #164e63;
-}
-
-/* Lists */
-ul, ol {
-    color: #263238;
-    background-color: transparent;
-}
-
-/* Cards */
-.card {
-    background-color: #263238;
-    color: white;
-}
-
-/* Card headings and paragraphs */
-.card h4,
-.card p {
-    color: white;
-    background-color: transparent;
-}
-
-/* Hero heading */
-.hero h1 {
-    color: white;
-    background-color: transparent;
-}
-
-/* Keep the logo white */
-.logo {
-    color: white;
-}
-
-/* Hamburger lines */
-.hamburger span {
-    background-color: white;
 }
 
 /* Mobile navigation colors */
